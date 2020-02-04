@@ -21,7 +21,7 @@ SAPGuiSession("Session").SAPGuiWindow("Multiple Selection for").SAPGuiTable("SAP
 SAPGuiSession("Session").SAPGuiWindow("Multiple Selection for").SAPGuiTable("SAPLALDBSINGLE").SetCellData 2,"Single value","581" @@ hightlight id_;_1_;_script infofile_;_ZIP::ssf5.xml_;_
 SAPGuiSession("Session").SAPGuiWindow("Multiple Selection for").SAPGuiTable("SAPLALDBSINGLE").SetCellData 3,"Single value","600" @@ hightlight id_;_1_;_script infofile_;_ZIP::ssf5.xml_;_
 SAPGuiSession("Session").SAPGuiWindow("Multiple Selection for").SAPGuiTable("SAPLALDBSINGLE").SelectCell 3,"Single value" @@ hightlight id_;_1_;_script infofile_;_ZIP::ssf5.xml_;_
-
+SAPGuiSession("Session").SAPGuiWindow("Multiple Selection for").CaptureBitmap "C:/Capture/Image.png", True
 SAPGuiSession("Session").SAPGuiWindow("Multiple Selection for").SAPGuiButton("Copy   (F8)").Click @@ hightlight id_;_2_;_script infofile_;_ZIP::ssf5.xml_;_
 SAPGuiSession("Session").SAPGuiWindow("Program to call CDS").SAPGuiButton("Execute   (F8)").Click @@ hightlight id_;_1_;_script infofile_;_ZIP::ssf6.xml_;_
 
