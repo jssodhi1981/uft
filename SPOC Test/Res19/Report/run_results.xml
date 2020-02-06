@@ -1,0 +1,334 @@
+<?xml version="1.0"?>
+<Results version="1.0">
+<ReportNode type="testrun">
+<ReportNode type="Action">
+<ReportNode type="Context">
+<ReportNode type="Context">
+<ReportNode type="Step">
+<Data>
+    <Name>"GridViewCtrl":FindAllRowsByCellContent "2",0</Name>
+    <Description>FindAllRowsByCellContent "2",0</Description>
+    <StartTime>2020-02-05 11:37:51</StartTime>
+    <Result>Failed</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>SAPGuiSession</Type>
+            <Name><![CDATA[Session]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiWindow</Type>
+            <Name><![CDATA[Program to call CDS_2]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiGrid</Type>
+            <Name><![CDATA[GridViewCtrl]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[FindAllRowsByCellContent "2",0]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[type]]></Name>
+            <Value><![CDATA[GuiShell]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[name]]></Name>
+            <Value><![CDATA[shell]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[guicomponenttype]]></Name>
+            <Value><![CDATA[201]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>f01941e33d4c4aaaae335bea895e9472</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Snapshot reference="Resources\Snapshots\9e33e86d-5e2b-49d9-bc95-9aff4f219887.jpeg" />
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Program to call CDS_2</Name>
+    <Description>SAPGuiWindow</Description>
+    <StartTime>2020-02-05 11:37:51</StartTime>
+    <Duration>0</Duration>
+    <Result>Failed</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>SAPGuiSession</Type>
+            <Name><![CDATA[Session]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiWindow</Type>
+            <Name><![CDATA[Program to call CDS_2]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[SAPGuiWindow]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[transaction]]></Name>
+            <Value><![CDATA[ZDEVOPS_BOM_USAGE]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[screennumber]]></Name>
+            <Value><![CDATA[500]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[program]]></Name>
+            <Value><![CDATA[SAPLSLVC_FULLSCREEN]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[name]]></Name>
+            <Value><![CDATA[wnd[0]]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[guicomponenttype]]></Name>
+            <Value><![CDATA[21]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>3a666819bfe44e109fc23acdd58f4d4b</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Session</Name>
+    <Description>SAPGuiSession</Description>
+    <StartTime>2020-02-05 11:37:51</StartTime>
+    <Duration>0</Duration>
+    <Result>Failed</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>SAPGuiSession</Type>
+            <Name><![CDATA[Session]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[SAPGuiSession]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[name]]></Name>
+            <Value><![CDATA[ses[0]]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[guicomponenttype]]></Name>
+            <Value><![CDATA[12]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>ec31d5fa05d040a08df2117511c3e5b7</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Context">
+<ReportNode type="Context">
+<ReportNode type="Step">
+<Data>
+    <Name>GridViewCtrl</Name>
+    <ErrorText>Cannot identify the specified item of the GridViewCtrl object. Confirm that the specified item is included in the object's item collection.</ErrorText>
+    <Description>Cannot&amp;nbsp;identify&amp;nbsp;the&amp;nbsp;specified&amp;nbsp;item&amp;nbsp;of&amp;nbsp;the&amp;nbsp;GridViewCtrl&amp;nbsp;object.&amp;nbsp;Confirm&amp;nbsp;that&amp;nbsp;the&amp;nbsp;specified&amp;nbsp;item&amp;nbsp;is&amp;nbsp;included&amp;nbsp;in&amp;nbsp;the&amp;nbsp;object's&amp;nbsp;item&amp;nbsp;collection.&lt;br/&gt;&lt;br/&gt;Object's physical description:&lt;br&gt;Type = GuiShell&lt;br&gt;Name = shell&lt;br&gt;miccommentproperty = &lt;br&gt;Mercury Class = SAPGuiGrid&lt;br&gt;SapGui numeric component type = 201&lt;br&gt;</Description>
+    <StartTime>2020-02-05 11:37:51</StartTime>
+    <Result>Failed</Result>
+    <Extension>
+      <StackTrace>
+        <StackFrame>
+          <ModuleName><![CDATA[Action1]]></ModuleName>
+          <FileName><![CDATA[Action1]]></FileName>
+          <Language><![CDATA[VBScript - script block]]></Language>
+          <FunctionName><![CDATA[VBScript global code]]></FunctionName>
+          <Scripts><![CDATA[Set Rownumber=SAPGuiSession("Session").SAPGuiWindow("Program to call CDS_2").SAPGuiGrid("GridViewCtrl").FindAllRowsByCellContent("2", IND-CENTRIFUGAL)]]></Scripts>
+          <LineNo><![CDATA[39]]></LineNo>
+        </StackFrame>
+      </StackTrace>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>SAPGuiSession</Type>
+            <Name><![CDATA[Session]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiWindow</Type>
+            <Name><![CDATA[Program to call CDS_2]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiGrid</Type>
+            <Name><![CDATA[GridViewCtrl]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[Cannot&nbsp;identify&nbsp;the&nbsp;specified&nbsp;item&nbsp;of&nbsp;the&nbsp;GridViewCtrl&nbsp;object.&nbsp;Confirm&nbsp;that&nbsp;the&nbsp;specified&nbsp;item&nbsp;is&nbsp;included&nbsp;in&nbsp;the&nbsp;object's&nbsp;item&nbsp;collection.]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[type]]></Name>
+            <Value><![CDATA[GuiShell]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[name]]></Name>
+            <Value><![CDATA[shell]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[guicomponenttype]]></Name>
+            <Value><![CDATA[201]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>f01941e33d4c4aaaae335bea895e9472</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <NodeType>Run Error</NodeType>
+    </Extension>
+    <Snapshot reference="Resources\Snapshots\66a0da69-2a0e-4ea6-84a6-a3c2a5997e39.jpeg" />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>Stop Run</Name>
+    <Description>Run stopped by user.</Description>
+    <StartTime>2020-02-05 11:37:54</StartTime>
+    <Result>Information</Result>
+    <Extension>
+      <IconKey>83715b74dc90460382fd91307cf9e515</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Program to call CDS_2</Name>
+    <Description>SAPGuiWindow</Description>
+    <StartTime>2020-02-05 11:37:51</StartTime>
+    <Duration>3</Duration>
+    <Result>Failed</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>SAPGuiSession</Type>
+            <Name><![CDATA[Session]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiWindow</Type>
+            <Name><![CDATA[Program to call CDS_2]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[SAPGuiWindow]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[transaction]]></Name>
+            <Value><![CDATA[ZDEVOPS_BOM_USAGE]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[screennumber]]></Name>
+            <Value><![CDATA[500]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[program]]></Name>
+            <Value><![CDATA[SAPLSLVC_FULLSCREEN]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[name]]></Name>
+            <Value><![CDATA[wnd[0]]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[guicomponenttype]]></Name>
+            <Value><![CDATA[21]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>3a666819bfe44e109fc23acdd58f4d4b</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Session</Name>
+    <Description>SAPGuiSession</Description>
+    <StartTime>2020-02-05 11:37:51</StartTime>
+    <Duration>3</Duration>
+    <Result>Failed</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>SAPGuiSession</Type>
+            <Name><![CDATA[Session]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[SAPGuiSession]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[name]]></Name>
+            <Value><![CDATA[ses[0]]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[guicomponenttype]]></Name>
+            <Value><![CDATA[12]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>ec31d5fa05d040a08df2117511c3e5b7</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Action1</Name>
+    <Description />
+    <StartTime>2020-02-05 11:37:50</StartTime>
+    <Duration>4</Duration>
+    <Result>Failed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>077f54df65ec422cba0c262532bbcb9d</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>GUITest3</Name>
+    <ToolName>Micro Focus Unified Functional Testing</ToolName>
+    <ToolVersion>15.0</ToolVersion>
+    <ToolVersionStringLiteral>15.0</ToolVersionStringLiteral>
+    <Description />
+    <StartTime>2020-02-05 11:37:48</StartTime>
+    <Duration>6</Duration>
+    <Result>Failed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>da260a3af11e4992b6912ef306677a12</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Environment>
+      <Timezone>+05:30:00</Timezone>
+      <Locale>English (United States)</Locale>
+      <User>CORP\jaspreet</User>
+      <CpuInfo>Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz</CpuInfo>
+      <NumberOfCores>4</NumberOfCores>
+      <TotalMemory>8060</TotalMemory>
+      <HostName>corp.capgemini.com\LIN34002454</HostName>
+      <OSInfo>Windows 10</OSInfo>
+    </Environment>
+    <TestedApplications />
+    <Links>
+      <Link type="DataTable" reference="Default.xlsx" displayname="Default Data Table" />
+    </Links>
+  </Data>
+</ReportNode>
+<GeneralInfo>
+    <ResultName>Res19</ResultName>
+    <RunStartTime>2020-02-05 11:37:48</RunStartTime>
+    <Timezone>+05:30:00</Timezone>
+    <OrchestrationToolName>Micro Focus Unified Functional Testing</OrchestrationToolName>
+    <OrchestrationToolVersion>15.0</OrchestrationToolVersion>
+    <OrchestrationToolVersionStringLiteral>15.0</OrchestrationToolVersionStringLiteral>
+  </GeneralInfo>
+</Results>
