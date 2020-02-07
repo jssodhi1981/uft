@@ -67,5 +67,6 @@ SAPGuiSession("Session").SAPGuiWindow("Program to call CDS_2").SAPGuiOKCode("OKC
 SAPGuiSession("Session").SAPGuiWindow("Program to call CDS_2").SendKey ENTER @@ hightlight id_;_0_;_script infofile_;_ZIP::ssf13.xml_;_
 
 
+Systemutil.CloseProcessByWndTitle ("SAP Logon 740")
 
 
