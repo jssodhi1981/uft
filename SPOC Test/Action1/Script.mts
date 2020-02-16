@@ -55,9 +55,9 @@ Ccontent=SAPGuiSession("Session").SAPGuiWindow("Program to call CDS_2").SAPGuiGr
 ' Compare the Quantity with Actual if both are equal make it pass
 
 If Ccontent="8,000" Then
-	Reporter.ReportEvent micPass, "BOM Quantity", "BOM quantity matched with expected quantity"
+	Reporter.ReportEvent micPass, "BOM Quantity:", "BOM quantity matched with expected quantity"
 	else
-	Reporter.ReportEvent micFail, "BOM Quantity", "BOM quantity matched with expected quantity"
+	Reporter.ReportEvent micFail, "BOM Quantity:", "BOM quantity does not match with expected quantity"
 	
 End If
 

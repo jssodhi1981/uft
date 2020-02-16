@@ -1,1 +1,1 @@
-﻿var __testDataSource={items:[{dataFilePath:'Default.xlsx',dataFileFormat:'excel',dataFileFolder:'C:\\OneDrive\\OneDrive - Capgemini\\Documents\\Unified Functional Testing\\GUITest3\\Res1',namePairs:[]}]};
+﻿var __testDataSource={items:[{dataFilePath:'Default.xlsx',dataFileFormat:'excel',dataFileFolder:'C:\\OneDrive\\OneDrive - Capgemini\\Documents\\Unified Functional Testing\\SPOC Test\\Res1',namePairs:[]}]};

@@ -9,7 +9,7 @@
 <Data>
     <Name>Maximize</Name>
     <Description>Maximize</Description>
-    <StartTime>2020-02-04 14:44:25</StartTime>
+    <StartTime>2020-02-16 22:30:43</StartTime>
     <Result>Done</Result>
     <Extension>
       <TestObject>
@@ -48,7 +48,7 @@
           </Property>
         </Properties>
       </TestObject>
-      <IconKey>49d4516e2e234e37a097c055d401eaa2</IconKey>
+      <IconKey>ef00400d93f5431f8d2d5dda86af23e4</IconKey>
       <IsPlainTextNodeName>True</IsPlainTextNodeName>
     </Extension>
   </Data>
@@ -57,7 +57,7 @@
 <Data>
     <Name>"User":Set "DEV_ECQ2"</Name>
     <Description>Set "DEV_ECQ2"</Description>
-    <StartTime>2020-02-04 14:44:25</StartTime>
+    <StartTime>2020-02-16 22:30:44</StartTime>
     <Result>Done</Result>
     <Extension>
       <TestObject>
@@ -88,16 +88,16 @@
           </Property>
         </Properties>
       </TestObject>
-      <IconKey>43b3e16ce5464730b25fd904f9653628</IconKey>
+      <IconKey>b4d55931f5ae40f9a834dbe0efb1413c</IconKey>
       <IsPlainTextNodeName>True</IsPlainTextNodeName>
     </Extension>
   </Data>
 </ReportNode>
 <ReportNode type="Step">
 <Data>
-    <Name>"Password":Set "********"</Name>
-    <Description>Set "********"</Description>
-    <StartTime>2020-02-04 14:44:25</StartTime>
+    <Name>"Password":Set "Init@1234"</Name>
+    <Description>Set "Init@1234"</Description>
+    <StartTime>2020-02-16 22:30:44</StartTime>
     <Result>Done</Result>
     <Extension>
       <TestObject>
@@ -116,7 +116,7 @@
             <Name><![CDATA[Password]]></Name>
           </Object>
         </Path>
-        <OperationData><![CDATA[Set "********"]]></OperationData>
+        <OperationData><![CDATA[Set "Init@1234"]]></OperationData>
         <Properties>
           <Property>
             <Name><![CDATA[name]]></Name>
@@ -128,7 +128,7 @@
           </Property>
         </Properties>
       </TestObject>
-      <IconKey>43b3e16ce5464730b25fd904f9653628</IconKey>
+      <IconKey>b4d55931f5ae40f9a834dbe0efb1413c</IconKey>
       <IsPlainTextNodeName>True</IsPlainTextNodeName>
     </Extension>
   </Data>
@@ -137,7 +137,7 @@
 <Data>
     <Name>"Password":SetFocus</Name>
     <Description>SetFocus</Description>
-    <StartTime>2020-02-04 14:44:25</StartTime>
+    <StartTime>2020-02-16 22:30:44</StartTime>
     <Result>Done</Result>
     <Extension>
       <TestObject>
@@ -168,7 +168,7 @@
           </Property>
         </Properties>
       </TestObject>
-      <IconKey>43b3e16ce5464730b25fd904f9653628</IconKey>
+      <IconKey>b4d55931f5ae40f9a834dbe0efb1413c</IconKey>
       <IsPlainTextNodeName>True</IsPlainTextNodeName>
     </Extension>
   </Data>
@@ -177,7 +177,7 @@
 <Data>
     <Name>SendKey ENTER</Name>
     <Description>SendKey ENTER</Description>
-    <StartTime>2020-02-04 14:44:25</StartTime>
+    <StartTime>2020-02-16 22:30:45</StartTime>
     <Result>Done</Result>
     <Extension>
       <TestObject>
@@ -216,7 +216,7 @@
           </Property>
         </Properties>
       </TestObject>
-      <IconKey>49d4516e2e234e37a097c055d401eaa2</IconKey>
+      <IconKey>ef00400d93f5431f8d2d5dda86af23e4</IconKey>
       <IsPlainTextNodeName>True</IsPlainTextNodeName>
     </Extension>
   </Data>
@@ -224,8 +224,8 @@
 <Data>
     <Name>SAP</Name>
     <Description>SAPGuiWindow</Description>
-    <StartTime>2020-02-04 14:44:25</StartTime>
-    <Duration>0</Duration>
+    <StartTime>2020-02-16 22:30:43</StartTime>
+    <Duration>2</Duration>
     <Result>Done</Result>
     <Extension>
       <TestObject>
@@ -264,7 +264,97 @@
           </Property>
         </Properties>
       </TestObject>
-      <IconKey>49d4516e2e234e37a097c055d401eaa2</IconKey>
+      <IconKey>ef00400d93f5431f8d2d5dda86af23e4</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Context">
+<ReportNode type="Step">
+<Data>
+    <Name>Continue   (F12).Exist</Name>
+    <Description>"Object does not exist"</Description>
+    <StartTime>2020-02-16 22:30:45</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>SAPGuiSession</Type>
+            <Name><![CDATA[Session]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiWindow</Type>
+            <Name><![CDATA[System Messages]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiButton</Type>
+            <Name><![CDATA[Continue   (F12)]]></Name>
+          </Object>
+        </Path>
+        <Operation>Exist</Operation>
+        <OperationData><![CDATA["Object does not exist"]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[name]]></Name>
+            <Value><![CDATA[btn[12]]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[guicomponenttype]]></Name>
+            <Value><![CDATA[40]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>9650ad00d49346d3999bc310746c8c19</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>System Messages</Name>
+    <Description>SAPGuiWindow</Description>
+    <StartTime>2020-02-16 22:30:45</StartTime>
+    <Duration>0</Duration>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>SAPGuiSession</Type>
+            <Name><![CDATA[Session]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiWindow</Type>
+            <Name><![CDATA[System Messages]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[SAPGuiWindow]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[transaction]]></Name>
+            <Value><![CDATA[S000]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[screennumber]]></Name>
+            <Value><![CDATA[120]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[program]]></Name>
+            <Value><![CDATA[SAPMSSY0]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[name]]></Name>
+            <Value><![CDATA[wnd[1]]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[guicomponenttype]]></Name>
+            <Value><![CDATA[22]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>ef00400d93f5431f8d2d5dda86af23e4</IconKey>
       <IsPlainTextNodeName>True</IsPlainTextNodeName>
     </Extension>
   </Data>
@@ -274,7 +364,7 @@
 <Data>
     <Name>Continue with this logon,.Exist</Name>
     <Description>"Object does not exist"</Description>
-    <StartTime>2020-02-04 14:44:25</StartTime>
+    <StartTime>2020-02-16 22:30:45</StartTime>
     <Result>Done</Result>
     <Extension>
       <TestObject>
@@ -310,7 +400,7 @@
           </Property>
         </Properties>
       </TestObject>
-      <IconKey>07cd42b194974f42bf1c522713d084dc</IconKey>
+      <IconKey>daee442ae92c41a684819b2b78b69fc5</IconKey>
       <IsPlainTextNodeName>True</IsPlainTextNodeName>
     </Extension>
   </Data>
@@ -318,7 +408,7 @@
 <Data>
     <Name>License Information for</Name>
     <Description>SAPGuiWindow</Description>
-    <StartTime>2020-02-04 14:44:25</StartTime>
+    <StartTime>2020-02-16 22:30:45</StartTime>
     <Duration>0</Duration>
     <Result>Done</Result>
     <Extension>
@@ -341,10 +431,6 @@
             <Value><![CDATA[S000]]></Value>
           </Property>
           <Property>
-            <Name><![CDATA[screennumber]]></Name>
-            <Value><![CDATA[500]]></Value>
-          </Property>
-          <Property>
             <Name><![CDATA[program]]></Name>
             <Value><![CDATA[SAPMSYST]]></Value>
           </Property>
@@ -358,7 +444,696 @@
           </Property>
         </Properties>
       </TestObject>
-      <IconKey>49d4516e2e234e37a097c055d401eaa2</IconKey>
+      <IconKey>ef00400d93f5431f8d2d5dda86af23e4</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Context">
+<ReportNode type="Step">
+<Data>
+    <Name>"OKCode":Set "ZDEVOPS_BOM_USAGE"</Name>
+    <Description>Set "ZDEVOPS_BOM_USAGE"</Description>
+    <StartTime>2020-02-16 22:30:45</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>SAPGuiSession</Type>
+            <Name><![CDATA[Session]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiWindow</Type>
+            <Name><![CDATA[SAP Easy Access]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiOKCode</Type>
+            <Name><![CDATA[OKCode]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[Set "ZDEVOPS_BOM_USAGE"]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[guicomponenttype]]></Name>
+            <Value><![CDATA[35]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>20089c6c56c54ff1a0d448a66e2d6a15</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>SendKey ENTER</Name>
+    <Description>SendKey ENTER</Description>
+    <StartTime>2020-02-16 22:30:46</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>SAPGuiSession</Type>
+            <Name><![CDATA[Session]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiWindow</Type>
+            <Name><![CDATA[SAP Easy Access]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[SendKey ENTER]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[transaction]]></Name>
+            <Value><![CDATA[SESSION_MANAGER]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[program]]></Name>
+            <Value><![CDATA[SAPLSMTR_NAVIGATION]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[name]]></Name>
+            <Value><![CDATA[wnd[0]]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[guicomponenttype]]></Name>
+            <Value><![CDATA[21]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>ef00400d93f5431f8d2d5dda86af23e4</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>SAP Easy Access</Name>
+    <Description>SAPGuiWindow</Description>
+    <StartTime>2020-02-16 22:30:45</StartTime>
+    <Duration>2</Duration>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>SAPGuiSession</Type>
+            <Name><![CDATA[Session]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiWindow</Type>
+            <Name><![CDATA[SAP Easy Access]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[SAPGuiWindow]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[transaction]]></Name>
+            <Value><![CDATA[SESSION_MANAGER]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[program]]></Name>
+            <Value><![CDATA[SAPLSMTR_NAVIGATION]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[name]]></Name>
+            <Value><![CDATA[wnd[0]]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[guicomponenttype]]></Name>
+            <Value><![CDATA[21]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>ef00400d93f5431f8d2d5dda86af23e4</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Context">
+<ReportNode type="Step">
+<Data>
+    <Name>"Multiple selection":Click</Name>
+    <Description>Click</Description>
+    <StartTime>2020-02-16 22:30:47</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>SAPGuiSession</Type>
+            <Name><![CDATA[Session]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiWindow</Type>
+            <Name><![CDATA[Program to call CDS]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiButton</Type>
+            <Name><![CDATA[Multiple selection]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[Click]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[name]]></Name>
+            <Value><![CDATA[%_S_MATNR_%_APP_%-VALU_PUSH]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[guicomponenttype]]></Name>
+            <Value><![CDATA[40]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>9650ad00d49346d3999bc310746c8c19</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Program to call CDS</Name>
+    <Description>SAPGuiWindow</Description>
+    <StartTime>2020-02-16 22:30:47</StartTime>
+    <Duration>0</Duration>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>SAPGuiSession</Type>
+            <Name><![CDATA[Session]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiWindow</Type>
+            <Name><![CDATA[Program to call CDS]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[SAPGuiWindow]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[transaction]]></Name>
+            <Value><![CDATA[ZDEVOPS_BOM_USAGE]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[screennumber]]></Name>
+            <Value><![CDATA[1000]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[program]]></Name>
+            <Value><![CDATA[ZDEVOPS_PROG_FETCH_BOM_QUAN]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[name]]></Name>
+            <Value><![CDATA[wnd[0]]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[guicomponenttype]]></Name>
+            <Value><![CDATA[21]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>ef00400d93f5431f8d2d5dda86af23e4</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Context">
+<ReportNode type="Step">
+<Data>
+    <Name>"SAPLALDBSINGLE":SetCellData 1,"Single value","120"</Name>
+    <Description>SetCellData 1,"Single value","120"</Description>
+    <StartTime>2020-02-16 22:30:47</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>SAPGuiSession</Type>
+            <Name><![CDATA[Session]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiWindow</Type>
+            <Name><![CDATA[Multiple Selection for]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiTable</Type>
+            <Name><![CDATA[SAPLALDBSINGLE]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[SetCellData 1,"Single value","120"]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[name]]></Name>
+            <Value><![CDATA[SAPLALDBSINGLE]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[guicomponenttype]]></Name>
+            <Value><![CDATA[80]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>d506257f209744368c7c70b0b05e5673</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>"SAPLALDBSINGLE":SetCellData 2,"Single value","581"</Name>
+    <Description>SetCellData 2,"Single value","581"</Description>
+    <StartTime>2020-02-16 22:30:47</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>SAPGuiSession</Type>
+            <Name><![CDATA[Session]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiWindow</Type>
+            <Name><![CDATA[Multiple Selection for]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiTable</Type>
+            <Name><![CDATA[SAPLALDBSINGLE]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[SetCellData 2,"Single value","581"]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[name]]></Name>
+            <Value><![CDATA[SAPLALDBSINGLE]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[guicomponenttype]]></Name>
+            <Value><![CDATA[80]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>d506257f209744368c7c70b0b05e5673</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>"SAPLALDBSINGLE":SetCellData 3,"Single value","600"</Name>
+    <Description>SetCellData 3,"Single value","600"</Description>
+    <StartTime>2020-02-16 22:30:47</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>SAPGuiSession</Type>
+            <Name><![CDATA[Session]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiWindow</Type>
+            <Name><![CDATA[Multiple Selection for]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiTable</Type>
+            <Name><![CDATA[SAPLALDBSINGLE]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[SetCellData 3,"Single value","600"]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[name]]></Name>
+            <Value><![CDATA[SAPLALDBSINGLE]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[guicomponenttype]]></Name>
+            <Value><![CDATA[80]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>d506257f209744368c7c70b0b05e5673</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>"SAPLALDBSINGLE":SelectCell 3,"Single value"</Name>
+    <Description>SelectCell 3,"Single value"</Description>
+    <StartTime>2020-02-16 22:30:47</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>SAPGuiSession</Type>
+            <Name><![CDATA[Session]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiWindow</Type>
+            <Name><![CDATA[Multiple Selection for]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiTable</Type>
+            <Name><![CDATA[SAPLALDBSINGLE]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[SelectCell 3,"Single value"]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[name]]></Name>
+            <Value><![CDATA[SAPLALDBSINGLE]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[guicomponenttype]]></Name>
+            <Value><![CDATA[80]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>d506257f209744368c7c70b0b05e5673</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>"Copy   (F8)":Click</Name>
+    <Description>Click</Description>
+    <StartTime>2020-02-16 22:30:48</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>SAPGuiSession</Type>
+            <Name><![CDATA[Session]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiWindow</Type>
+            <Name><![CDATA[Multiple Selection for]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiButton</Type>
+            <Name><![CDATA[Copy   (F8)]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[Click]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[name]]></Name>
+            <Value><![CDATA[btn[8]]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[guicomponenttype]]></Name>
+            <Value><![CDATA[40]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>9650ad00d49346d3999bc310746c8c19</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Multiple Selection for</Name>
+    <Description>SAPGuiWindow</Description>
+    <StartTime>2020-02-16 22:30:47</StartTime>
+    <Duration>2</Duration>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>SAPGuiSession</Type>
+            <Name><![CDATA[Session]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiWindow</Type>
+            <Name><![CDATA[Multiple Selection for]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[SAPGuiWindow]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[transaction]]></Name>
+            <Value><![CDATA[ZDEVOPS_BOM_USAGE]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[screennumber]]></Name>
+            <Value><![CDATA[3000]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[program]]></Name>
+            <Value><![CDATA[SAPLALDB]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[name]]></Name>
+            <Value><![CDATA[wnd[1]]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[guicomponenttype]]></Name>
+            <Value><![CDATA[22]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>ef00400d93f5431f8d2d5dda86af23e4</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Context">
+<ReportNode type="Step">
+<Data>
+    <Name>"Execute   (F8)":Click</Name>
+    <Description>Click</Description>
+    <StartTime>2020-02-16 22:30:49</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>SAPGuiSession</Type>
+            <Name><![CDATA[Session]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiWindow</Type>
+            <Name><![CDATA[Program to call CDS]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiButton</Type>
+            <Name><![CDATA[Execute   (F8)]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[Click]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[name]]></Name>
+            <Value><![CDATA[btn[8]]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[guicomponenttype]]></Name>
+            <Value><![CDATA[40]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>9650ad00d49346d3999bc310746c8c19</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Program to call CDS</Name>
+    <Description>SAPGuiWindow</Description>
+    <StartTime>2020-02-16 22:30:49</StartTime>
+    <Duration>1</Duration>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>SAPGuiSession</Type>
+            <Name><![CDATA[Session]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiWindow</Type>
+            <Name><![CDATA[Program to call CDS]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[SAPGuiWindow]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[transaction]]></Name>
+            <Value><![CDATA[ZDEVOPS_BOM_USAGE]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[screennumber]]></Name>
+            <Value><![CDATA[1000]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[program]]></Name>
+            <Value><![CDATA[ZDEVOPS_PROG_FETCH_BOM_QUAN]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[name]]></Name>
+            <Value><![CDATA[wnd[0]]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[guicomponenttype]]></Name>
+            <Value><![CDATA[21]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>ef00400d93f5431f8d2d5dda86af23e4</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Context">
+<ReportNode type="Step">
+<Data>
+    <Name>"GridViewCtrl":FindRowByCellContent "Material description","IND-CENTRIFUGAL",1</Name>
+    <Description>FindRowByCellContent "Material description","IND-CENTRIFUGAL",1</Description>
+    <StartTime>2020-02-16 22:30:50</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>SAPGuiSession</Type>
+            <Name><![CDATA[Session]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiWindow</Type>
+            <Name><![CDATA[Program to call CDS_2]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiGrid</Type>
+            <Name><![CDATA[GridViewCtrl]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[FindRowByCellContent "Material description","IND-CENTRIFUGAL",1]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[type]]></Name>
+            <Value><![CDATA[GuiShell]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[name]]></Name>
+            <Value><![CDATA[shell]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[guicomponenttype]]></Name>
+            <Value><![CDATA[201]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>eef7cbe802f94aca92f690d203d3890d</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>"GridViewCtrl":GetCellData 2,"Component quantity"</Name>
+    <Description>GetCellData 2,"Component quantity"</Description>
+    <StartTime>2020-02-16 22:30:50</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>SAPGuiSession</Type>
+            <Name><![CDATA[Session]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiWindow</Type>
+            <Name><![CDATA[Program to call CDS_2]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiGrid</Type>
+            <Name><![CDATA[GridViewCtrl]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[GetCellData 2,"Component quantity"]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[type]]></Name>
+            <Value><![CDATA[GuiShell]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[name]]></Name>
+            <Value><![CDATA[shell]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[guicomponenttype]]></Name>
+            <Value><![CDATA[201]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>eef7cbe802f94aca92f690d203d3890d</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Program to call CDS_2</Name>
+    <Description>SAPGuiWindow</Description>
+    <StartTime>2020-02-16 22:30:50</StartTime>
+    <Duration>0</Duration>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>SAPGuiSession</Type>
+            <Name><![CDATA[Session]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiWindow</Type>
+            <Name><![CDATA[Program to call CDS_2]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[SAPGuiWindow]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[transaction]]></Name>
+            <Value><![CDATA[ZDEVOPS_BOM_USAGE]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[screennumber]]></Name>
+            <Value><![CDATA[500]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[program]]></Name>
+            <Value><![CDATA[SAPLSLVC_FULLSCREEN]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[name]]></Name>
+            <Value><![CDATA[wnd[0]]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[guicomponenttype]]></Name>
+            <Value><![CDATA[21]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>ef00400d93f5431f8d2d5dda86af23e4</IconKey>
       <IsPlainTextNodeName>True</IsPlainTextNodeName>
     </Extension>
   </Data>
@@ -366,8 +1141,8 @@
 <Data>
     <Name>Session</Name>
     <Description>SAPGuiSession</Description>
-    <StartTime>2020-02-04 14:44:24</StartTime>
-    <Duration>1</Duration>
+    <StartTime>2020-02-16 22:30:43</StartTime>
+    <Duration>7</Duration>
     <Result>Done</Result>
     <Extension>
       <TestObject>
@@ -390,7 +1165,186 @@
           </Property>
         </Properties>
       </TestObject>
-      <IconKey>a21ef9987b9e44279c758610ffcc351e</IconKey>
+      <IconKey>295998ac34eb4ee6904fdfbb25dc50d9</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="User">
+<Data>
+    <Name>BOM Quantity:</Name>
+    <Description>BOM quantity matched with expected quantity</Description>
+    <StartTime>2020-02-16 22:30:50</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <IconKey>a313af4525a14d3da115470c47a19e63</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Context">
+<ReportNode type="Context">
+<ReportNode type="Step">
+<Data>
+    <Name>"OKCode":Set "/nex"</Name>
+    <Description>Set "/nex"</Description>
+    <StartTime>2020-02-16 22:30:50</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>SAPGuiSession</Type>
+            <Name><![CDATA[Session]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiWindow</Type>
+            <Name><![CDATA[Program to call CDS_2]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiOKCode</Type>
+            <Name><![CDATA[OKCode]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[Set "/nex"]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[guicomponenttype]]></Name>
+            <Value><![CDATA[35]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>20089c6c56c54ff1a0d448a66e2d6a15</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>SendKey ENTER</Name>
+    <Description>SendKey ENTER</Description>
+    <StartTime>2020-02-16 22:30:50</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>SAPGuiSession</Type>
+            <Name><![CDATA[Session]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiWindow</Type>
+            <Name><![CDATA[Program to call CDS_2]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[SendKey ENTER]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[transaction]]></Name>
+            <Value><![CDATA[ZDEVOPS_BOM_USAGE]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[screennumber]]></Name>
+            <Value><![CDATA[500]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[program]]></Name>
+            <Value><![CDATA[SAPLSLVC_FULLSCREEN]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[name]]></Name>
+            <Value><![CDATA[wnd[0]]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[guicomponenttype]]></Name>
+            <Value><![CDATA[21]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>ef00400d93f5431f8d2d5dda86af23e4</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Program to call CDS_2</Name>
+    <Description>SAPGuiWindow</Description>
+    <StartTime>2020-02-16 22:30:50</StartTime>
+    <Duration>6</Duration>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>SAPGuiSession</Type>
+            <Name><![CDATA[Session]]></Name>
+          </Object>
+          <Object>
+            <Type>SAPGuiWindow</Type>
+            <Name><![CDATA[Program to call CDS_2]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[SAPGuiWindow]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[transaction]]></Name>
+            <Value><![CDATA[ZDEVOPS_BOM_USAGE]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[screennumber]]></Name>
+            <Value><![CDATA[500]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[program]]></Name>
+            <Value><![CDATA[SAPLSLVC_FULLSCREEN]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[name]]></Name>
+            <Value><![CDATA[wnd[0]]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[guicomponenttype]]></Name>
+            <Value><![CDATA[21]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>ef00400d93f5431f8d2d5dda86af23e4</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Session</Name>
+    <Description>SAPGuiSession</Description>
+    <StartTime>2020-02-16 22:30:50</StartTime>
+    <Duration>6</Duration>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>SAPGuiSession</Type>
+            <Name><![CDATA[Session]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[SAPGuiSession]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[name]]></Name>
+            <Value><![CDATA[ses[0]]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[guicomponenttype]]></Name>
+            <Value><![CDATA[12]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>295998ac34eb4ee6904fdfbb25dc50d9</IconKey>
       <IsPlainTextNodeName>True</IsPlainTextNodeName>
     </Extension>
   </Data>
@@ -398,12 +1352,12 @@
 <Data>
     <Name>Action1</Name>
     <Description />
-    <StartTime>2020-02-04 14:44:24</StartTime>
-    <Duration>1</Duration>
-    <Result>Done</Result>
+    <StartTime>2020-02-16 22:30:43</StartTime>
+    <Duration>13</Duration>
+    <Result>Passed</Result>
     <InputParameters />
     <Extension>
-      <IconKey>7c8e490c2ae045f88a71d05a70b9c69e</IconKey>
+      <IconKey>a77fda6bece049ee9cc0ad28673a781b</IconKey>
       <IsPlainTextNodeName>True</IsPlainTextNodeName>
     </Extension>
   </Data>
@@ -411,11 +1365,11 @@
 <Data>
     <Name>Action0</Name>
     <Description />
-    <StartTime>2020-02-04 14:44:24</StartTime>
-    <Duration>1</Duration>
-    <Result>Done</Result>
+    <StartTime>2020-02-16 22:30:43</StartTime>
+    <Duration>13</Duration>
+    <Result>Passed</Result>
     <Extension>
-      <IconKey>575fa79129b34ea5a652c810128134c8</IconKey>
+      <IconKey>6529d9a73def4f36be85caa4ead89bb4</IconKey>
       <IsPlainTextNodeName>True</IsPlainTextNodeName>
     </Extension>
     <Index>1</Index>
@@ -423,17 +1377,17 @@
   </Data>
 </ReportNode>
 <Data>
-    <Name>GUITest3</Name>
+    <Name>SPOC Test</Name>
     <ToolName>Micro Focus Unified Functional Testing</ToolName>
     <ToolVersion>15.0</ToolVersion>
     <ToolVersionStringLiteral>15.0</ToolVersionStringLiteral>
     <Description />
-    <StartTime>2020-02-04 14:44:12</StartTime>
-    <Duration>13</Duration>
-    <Result>Done</Result>
+    <StartTime>2020-02-16 22:30:23</StartTime>
+    <Duration>33</Duration>
+    <Result>Passed</Result>
     <InputParameters />
     <Extension>
-      <IconKey>5f0e4babf72f49748699ddf8f5ebc1b1</IconKey>
+      <IconKey>01684edc61064c2786d0ba467d56937a</IconKey>
       <IsPlainTextNodeName>True</IsPlainTextNodeName>
     </Extension>
     <Environment>
@@ -454,7 +1408,7 @@
 </ReportNode>
 <GeneralInfo>
     <ResultName>Res1</ResultName>
-    <RunStartTime>2020-02-04 14:44:12</RunStartTime>
+    <RunStartTime>2020-02-16 22:30:23</RunStartTime>
     <Timezone>+05:30:00</Timezone>
     <OrchestrationToolName>Micro Focus Unified Functional Testing</OrchestrationToolName>
     <OrchestrationToolVersion>15.0</OrchestrationToolVersion>
